@@ -83,7 +83,7 @@ def tobs():
 #When given the start only, calculate TMIN, TAVG, and TMAX for all dates greater than or equal to the start date.
 #When given the start and the end date, calculate the TMIN, TAVG, and TMAX for dates from the start date through the end date (inclusive).
 
-app.route("/api/v1.0/<start>")
+@app.route("/api/v1.0/<start>")
 def Start(start):
     session = Session(engine)
     
